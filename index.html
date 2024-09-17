@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f7f7f7;
+    }
+
+    .signIn {
+        display: flex;
+        width: 60%;
+        height: 400px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .left {
+        background-color: #fff;
+        width: 50%;
+        padding: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 11px;
+        font-weight: 800;
+    }
+
+    form input,
+    form button {
+        margin-bottom: 15px;
+        border-radius: 30px;
+        padding: 15px;
+
+    }
+
+    form input {
+        border: 0px solid #ddd;
+        background-color: #f7f7f7;
+
+    }
+
+    form button {
+        background: linear-gradient(to right, #ef5518, #ec56d0);
+        color: white;
+        border: 0px;
+    }
+
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .fooder {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fooder label {
+        color: #888382;
+        color-scheme: red;
+    }
+
+    .fooder label input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+
+    }
+    .fooder label input[type="checkbox"]:checked+input {
+        background-color: #d6217c;
+        color: #d6217c;
+
+    }
+    .fooder label input[type="checkbox"]:checked+span {
+        color: #d6217c;
+        /* Màu hồng đậm khi được chọn */
+    }
+
+    .fooder a {
+        color: #888382;
+        text-decoration: none;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+        color: white;
+        background: linear-gradient(to right, #ef5518, #ec56d0);
+        align-items: center;
+
+    }
+    .right a {
+        text-decoration: none;
+        margin: 0px 10px;
+        color: white;
+
+    }
+    .right button{
+        width: 80px;
+        background-color: unset;
+        border-radius: 30px;
+        border:1px solid #fff;
+        padding: 10px;
+        color: white;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="signIn">
+        <div class="left">
+            <div class="header">
+                <h2>Sign In</h1>
+                    <div class="icon">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLMzAcJBQq3UcFWJXnU1gBlMb0FTG7teHPQ&s"
+                            alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLMzAcJBQq3UcFWJXnU1gBlMb0FTG7teHPQ&s"
+                            alt="">
+                    </div>
+            </div>
+            <form action="">
+                <label for="UserName">USERNAME</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+                <label for="PassWord">PASSWORD</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button>SIGN</button>
+            </form>
+            <div class="fooder">
+                <label>
+                    <input type="checkbox" name="remember" id="remember">
+                    <span>Remember me</span></label>
+                <a href="forgotpassword">Forgot password</a>
+            </div>
+        </div>
+        <div class="right">
+            <h1>Welcome to login</h1>
+            <a href="login">Don't have an account?</a>
+            <button>Sign Up</button>
+        </div>
+    </div>
+</body>
+
+</html>
