@@ -1,0 +1,40 @@
+<label class="custom-checkbox">
+    <input type="checkbox">
+    <span></span> Option 1
+</label>
+<style>
+    /* Ẩn checkbox mặc định */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Tạo checkbox tùy chỉnh */
+.custom-checkbox span {
+    display: inline-block;
+    width: 25px; /* Kích thước của checkbox */
+    height: 25px; /* Kích thước của checkbox */
+    background-color: #ffe4e1; /* Màu hồng nhạt cho checkbox chưa chọn */
+    border-radius: 5px; /* Bo góc nếu muốn */
+    border: 2px solid #ff69b4; /* Viền màu hồng đậm */
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* Kiểm tra nếu checkbox được chọn */
+.custom-checkbox input[type="checkbox"]:checked + span {
+    background-color: #ff69b4; /* Màu hồng đậm khi được chọn */
+    border-color: #ff1493; /* Viền đậm hơn khi được chọn */
+}
+
+/* Tạo dấu kiểm khi được chọn */
+.custom-checkbox input[type="checkbox"]:checked + span::after {
+    content: '\2714'; /* Dấu kiểm */
+    font-size: 18px;
+    color: white; /* Màu của dấu kiểm */
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+</style>
